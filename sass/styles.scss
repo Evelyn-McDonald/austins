@@ -1,0 +1,82 @@
+* {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+	background: #e0e0e0 url(../images/background.jpg) repeat-x;
+	margin: 0px;
+	padding: 0px 20px;
+
+	h3 {
+		color: #333;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+
+	p {
+		color: #666;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 20px;
+	}
+
+	header {
+		background-color: #fff;
+		height: 155px;
+		width: 100%;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		-webkit-box-shadow: 0px 5px 31px 0px rgba(0,0,0,0.45);
+		-moz-box-shadow: 0px 5px 31px 0px rgba(0,0,0,0.45);
+		box-shadow: 0px 5px 31px 0px rgba(0,0,0,0.45);
+
+		nav {
+			background-color: #201d1d;
+			bottom: 0px;
+			position: absolute;
+			width: 100%;
+
+			a {
+				border-right: 1px #fff dashed;
+				color: #fff;
+				display: inline-block;
+				font-size: 16px;
+				padding: 10px 0;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+				width: 20%;
+			}
+		}
+	}
+
+
+	.content-container {
+		background-color: #fff;
+		max-width: 1000px;
+		margin: 200px auto 0;
+		padding: 40px 0 0;
+		width: 100%;
+		-webkit-box-shadow: 0px 5px 31px 0px rgba(0,0,0,0.45);
+		-moz-box-shadow: 0px 5px 31px 0px rgba(0,0,0,0.45);
+		box-shadow: 0px 5px 31px 0px rgba(0,0,0,0.45);
+
+		section {
+			padding: 40px;
+			.copy {
+				width: 60%;
+			}
+		}
+
+		footer {
+			background-color: #201d1d;
+			color: #fff;
+			text-align: center;
+			overflow: auto;
+		}
+	}
+}
