@@ -36,9 +36,37 @@
     </div>
     </header>
     <!-- Header module ends -->
+
+    <!-- <div class="leaves">
+        <img src="images/grunge-leaves.png"/>
+    </div> -->
     
     <!-- Content module begins -->
     <div class="content-container">
+        <!-- main content module -->
+        <section class="main">
+            <div class="main-card">
+                <img src=""/>
+                <h3>Hours of operation</h3>
+                <p>Cockshutt Road-side Stand:</p>
+                <p>10am - 6pm</p>
+                <p>Pick-Your-Own Berries:</p>
+                <P>8am - 8pm</p>
+            </div>
+            <div class="main-card">
+                <img src=""/>
+                <h3>How to contact us</h3>
+                <p>Cockshutt Road-side Stand:</p>
+            </div>
+            <div class="fb-news-container">
+                <h2>Tasty </h2><h2>News!</h2>
+                <div id="fb-news">
+                    Loading...
+                </div>
+            </div>
+        </section>
+        <!-- main content module ends -->
+
         <!-- our family story module -->
         <section>
             <div class="copy">
@@ -47,23 +75,10 @@
                 <p>The farm was sold to Mark and Maureen Sloot, nee Austin, who have been operating it with their three children for 16 years.The family specialized in strawberries but expanded into different crops to meet the substantial requests of their customers. The farm is conveniently located south of Boston, Ontario on Cockshutt Road. The farm is simply minutes from Hamilton, highway 403 and Port Dover.Austin's Pick Your Own takes pride in maintaining locally grown and produced fruits and vegetables for their road-side stand that you can buy with piece of mind.</p>
             </div>
             <div class="image">
-                <img src=""/>
+                <img src="images/berry-bowl.png"/>
             </div>
         </section>
         <!-- our family story module -->
-
-        <!-- M&S seeds module -->
-        <section>
-            <div class="copy">
-                <h2><img src="images/ms-seed.png"/></h2>
-                <h3>OrDonec nec convallis mauris. Maecenas et massa dolor. Cras cursus dolor ac auctor ullamcorper Mauris convallis.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate, metus at eleifend fringilla, diam lacus venenatis augue, sollicitudin semper tortor leo non magna. Nam pulvinar rhoncus pharetra. Donec ac lacus quam. Nulla iaculis facilisis molestie. Phasellus luctus mollis ipsum, volutpat tristique orci lacinia sed. Morbi pulvinar eget metus et maximus. Vivamus pulvinar porttitor leo, nec scelerisque justo ultrices quis. </p>
-            </div>
-            <div class="image">
-                <img src=""/>
-            </div>
-        </section>
-        <!-- M&S seeds module ends -->
 
         <!-- our produce module -->
         <section>
@@ -79,12 +94,33 @@
         </section>
         <!-- our product module ends -->
 
+        <!-- M&S seeds module -->
+        <section>
+            <div class="copy">
+                <h2><img src="images/ms-seed.png"/></h2>
+                <h3>OrDonec nec convallis mauris. Maecenas et massa dolor. Cras cursus dolor ac auctor ullamcorper Mauris convallis.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate, metus at eleifend fringilla, diam lacus venenatis augue, sollicitudin semper tortor leo non magna. Nam pulvinar rhoncus pharetra. Donec ac lacus quam. Nulla iaculis facilisis molestie. Phasellus luctus mollis ipsum, volutpat tristique orci lacinia sed. Morbi pulvinar eget metus et maximus. Vivamus pulvinar porttitor leo, nec scelerisque justo ultrices quis.</p>
+            </div>
+            <div class="image">
+                <img src="images/corn.jpg"/>
+            </div>
+        </section>
+        <!-- M&S seeds module ends -->
+
         <!-- contact us module -->
         <section>
             <div class="map">
+                <iframe width="600" height="450" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/directions?origin=2591+Cockshutt+Road,+Waterford,+Ontario+N0E+1Y0,+Canada&destination=...&key=..."></iframe>
             </div>
             <div class="">
                 <h2><img src="images/get-in-touch.png"/>
+                <form>
+                    <label for="saddr">Enter your location</label>
+                    <input type="text" name="saddr" />
+                    <input type="hidden" name="daddr" value="2591 Cockshutt Road, Waterford, Ontario N0E 1Y0, Canada" />
+                    <input type="submit" value "Get directions"/>
+                </form>
             </div>
         </section>
         <!-- contact us module ends -->
@@ -101,6 +137,7 @@
     
     <!-- Footer scripts -->
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/scripts.js"></script>
     
 </body>
 </html>
