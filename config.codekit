@@ -55,6 +55,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/fields.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 256292,
+		"inputAbbreviatedPath": "\/images\/fields.png",
+		"outputAbbreviatedPath": "\/images\/fields.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/fresh-produce.png": {
 		"fileType": 32768,
 		"ignore": 0,

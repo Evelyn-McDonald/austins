@@ -156,6 +156,19 @@ body {
 					}
 				}
 			}
+
+			.map {
+				float: left;
+				margin-right: 4%;
+				width: 48%;
+				#map-canvas {
+					height: 300px;
+				}
+			}
+			.directions {
+				float: left;
+				width: 48%;
+			}
 		}
 
 		footer {
