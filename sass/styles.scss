@@ -3,7 +3,7 @@
 }
 
 body {
-	background: #e0e0e0 url(../images/background.jpg) fixed;
+	background: #e0e0e0 url(../images/background.jpg) ;
 	margin: 0px;
 	padding: 0px 20px;
 
@@ -31,7 +31,7 @@ body {
 		height: 155px;
 		width: 100%;
 		max-width: 1000px;
-		margin: 0 auto 200px;
+		margin: 0 auto;
 		position: relative;
 		-webkit-box-shadow: 0px 5px 31px 0px rgba(0,0,0,0.45);
 		-moz-box-shadow: 0px 5px 31px 0px rgba(0,0,0,0.45);
@@ -39,7 +39,10 @@ body {
 
 		.logo {
 			display: inline-block;
+			float: left;
 			margin-left: 30px;
+			position: absolute;
+			z-index: 100;
 		}
 
 		nav {
@@ -49,7 +52,7 @@ body {
 			width: 100%;
 
 			a {
-				border-right: 1px #fff dashed;
+				
 				color: #fff;
 				display: inline-block;
 				float: right;
@@ -59,8 +62,17 @@ body {
 				text-decoration: none;
 				text-transform: uppercase;
 				width: 20%;
+
+				&:not(:first-of-type) {
+					border-right: 1px #fff dashed;
+				}
 			}
 		}
+	}
+
+	.hero {
+		height: 300px;
+		text-align: center;
 	}
 
 	.leaves {
@@ -81,7 +93,7 @@ body {
 
 		section {
 			overflow: auto;
-			padding: 40px;
+			padding: 60px;
 
 			&.alt-section {
 				background-color: #f8f8f8;
@@ -98,22 +110,30 @@ body {
 			}
 
 			&.main {
-				background: #fff url(../images/fields.png) no-repeat;
+				background: #fff url(../images/fields.png) center bottom no-repeat;
 
 				.main-card {
 					background-color: #fff;
 					border: 1px solid #fafafa;
 					float: left;
 					height: 240px;
-					margin: 0 15px;
+					margin: 40px 15px 0;
 					padding: 15px;
-					width: 30%;
+					text-align: center;
+					width: 29%;
 					-webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
 					-moz-box-sizing: border-box;    /* Firefox 1 - 28 */
 					box-sizing: border-box;
 					-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.1);
 					-moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.1);
 					box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.1);
+
+					img {
+						margin: -60px auto 0;
+					}
+					h3, p {
+						text-align: left;
+					}
 				}
 
 				.fb-news-container {
@@ -139,7 +159,7 @@ body {
 							padding: 0;
 
 							li {
-								border-bottom: 1px solid #ebebeb;
+								border-top: 1px solid #ebebeb;
 								clear: both;
 								list-style: none;
 								overflow: auto;
@@ -184,6 +204,8 @@ body {
 			}
 
 			.produce-list {
+				overflow: auto;
+
 				li {
 					float: left;
 					list-style: none;
@@ -197,8 +219,13 @@ body {
 		footer {
 			background-color: #201d1d;
 			color: #fff;
+			font-size: 12px;
 			text-align: center;
 			overflow: auto;
+
+			a {
+				color: #666;
+			}
 		}
 	}
 }

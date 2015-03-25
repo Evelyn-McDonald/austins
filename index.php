@@ -42,7 +42,7 @@
 
 <body>
     <!-- Facebook graph -->
-    <script>
+    <!--<script>
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '671178789694012',
@@ -67,10 +67,10 @@
          js.src = "//connect.facebook.net/en_US/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script>-->
     <!-- Facebook graph end -->
 
-    <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div>  -->
 
     <!-- Header module begins -->
     <header>
@@ -79,17 +79,18 @@
         </div>
         <img src="images/years-in-produce.png"/>
         <nav>
-            <a href="contact">Our Story</a>
-            <a href="about">Produce</a>
-            <a href="services">Contact</a>
             <a href="our-approach">M&S Seed</a>
+            <a href="services">Contact</a>
+            <a href="about">Produce</a>
+            <a href="contact">Our Story</a>            
         </nav>
-        <div id="hero">
-            
-        </div>
     </div>
     </header>
     <!-- Header module ends -->
+
+    <div class="hero">
+        <img src="images/hero.png"/>
+    </div>
 
     <!-- <div class="leaves">
         <img src="images/grunge-leaves.png"/>
@@ -136,7 +137,7 @@
 
         <!-- our produce module -->
         <section class="alt-section">
-            <h2><img src="images/fresh-produce.png"/>
+            <h2><img src="images/fresh-produce.png"/></h2>
             <p>Pellentesque id sollicitudin enim. Cras sodales sit amet nibh eu tempor. Quisque viverra vel libero et consectetur. Vivamus nisi ex, gravida vel imperdiet et, mollis sed nunc.</p>
             <ul class="produce-list">
                 <li>
@@ -202,7 +203,7 @@
         <section>
             <div class="copy">
                 <h2><img src="images/ms-seed.png"/></h2>
-                <h3>OrDonec nec convallis mauris. Maecenas et massa dolor. Cras cursus dolor ac auctor ullamcorper Mauris convallis.</h3>
+                <h3>OrDonec nec convallis mauris. Maecenas et massa dolor. Cras cursus dolor ac auctor ullamcorper Mauris.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate, metus at eleifend fringilla, diam lacus venenatis augue, sollicitudin semper tortor leo non magna. Nam pulvinar rhoncus pharetra. Donec ac lacus quam. Nulla iaculis facilisis molestie. Phasellus luctus mollis ipsum, volutpat tristique orci lacinia sed. Morbi pulvinar eget metus et maximus. Vivamus pulvinar porttitor leo, nec scelerisque justo ultrices quis.</p>
             </div>
             <div class="image">
