@@ -15,6 +15,10 @@ body {
 		text-transform: uppercase;
 	}
 
+	h2 {
+		text-align: center;
+	}
+
 	p {
 		color: #666;
 		font-size: 14px;
@@ -33,6 +37,11 @@ body {
 		-moz-box-shadow: 0px 5px 31px 0px rgba(0,0,0,0.45);
 		box-shadow: 0px 5px 31px 0px rgba(0,0,0,0.45);
 
+		.logo {
+			display: inline-block;
+			margin-left: 30px;
+		}
+
 		nav {
 			background-color: #201d1d;
 			bottom: 0px;
@@ -43,6 +52,7 @@ body {
 				border-right: 1px #fff dashed;
 				color: #fff;
 				display: inline-block;
+				float: right;
 				font-size: 16px;
 				padding: 10px 0;
 				text-align: center;
@@ -63,7 +73,6 @@ body {
 		background-color: #fff;
 		max-width: 1000px;
 		margin: 0 auto 0;
-		padding: 40px 0 0 0;
 		width: 100%;
 		z-index: 100;
 		-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
@@ -71,8 +80,12 @@ body {
 		box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
 
 		section {
-			margin: 40px;
 			overflow: auto;
+			padding: 40px;
+
+			&.alt-section {
+				background-color: #f8f8f8;
+			}
 
 			.copy {
 				float: left;
@@ -168,6 +181,16 @@ body {
 			.directions {
 				float: left;
 				width: 48%;
+			}
+
+			.produce-list {
+				li {
+					float: left;
+					list-style: none;
+					margin-right: 4%;
+					text-align: left;
+					width: 20%;
+				}
 			}
 		}
 

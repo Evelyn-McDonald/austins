@@ -41,8 +41,43 @@
 </head>
 
 <body>
+    <!-- Facebook graph -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '671178789694012',
+          xfbml      : true,
+          version    : 'v2.1'
+        });
+        /* make the API call */
+        FB.api(
+            "/137912086409500/feed",
+            function (response) {
+              if (response && !response.error) {
+                /* handle the result */
+              }
+            }
+        );
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Facebook graph end -->
+
+    <div id="fb-root"></div>
+
     <!-- Header module begins -->
     <header>
+        <div class="logo">
+        <img src="images/logo.png"/>
+        </div>
+        <img src="images/years-in-produce.png"/>
         <nav>
             <a href="contact">Our Story</a>
             <a href="about">Produce</a>
@@ -65,7 +100,7 @@
         <!-- main content module -->
         <section class="main">
             <div class="main-card">
-                <img src=""/>
+                <img src="images/clock.png"/>
                 <h3>Hours of operation</h3>
                 <p>Cockshutt Road-side Stand:</p>
                 <p>10am - 6pm</p>
@@ -73,7 +108,7 @@
                 <P>8am - 8pm</p>
             </div>
             <div class="main-card">
-                <img src=""/>
+                <img src="images/envelope.png"/>
                 <h3>How to contact us</h3>
                 <p>Cockshutt Road-side Stand:</p>
             </div>
@@ -106,8 +141,58 @@
             <ul class="produce-list">
                 <li>
                     <img src=""/>
-                    <h3>Name</h3>
-                    <p>Months</p>
+                    <h3>Asparagus</h3>
+                    <p>May</p>
+                </li>
+                <li>
+                    <img src=""/>
+                    <h3>Apples</h3>
+                    <p>September</p>
+                </li>
+                <li>
+                    <img src=""/>
+                    <h3>Beets</h3>
+                    <p>July</p>
+                </li>
+                <li>
+                    <img src=""/>
+                    <h3>Green/yello beans</h3>
+                    <p>June, July, August</p>
+                </li>
+                <li>
+                    <img src=""/>
+                    <h3>Pears</h3>
+                    <p>September</p>
+                </li>
+                <li>
+                    <img src=""/>
+                    <h3>Peppers</h3>
+                    <p>August</p>
+                </li>
+                <li>
+                    <img src=""/>
+                    <h3>Plums</h3>
+                    <p>September</p>
+                </li>
+                <li>
+                    <img src=""/>
+                    <h3>Pumpkins/Squash</h3>
+                    <p>September, October</p>
+                </li>
+                <li>
+                    <img src=""/>
+                    <h3>Raspberries</h3>
+                    <p>June, July</p>
+                </li>
+                <li>
+                    <img src=""/>
+                    <h3>Strawberries</h3>
+                    <p>June, July</p>
+                </li>
+                <li>
+                    <img src=""/>
+                    <h3>Sweet Corn</h3>
+                    <p>July, August, September</p>
                 </li>
             </ul>
         </section>
@@ -148,7 +233,7 @@
         <!-- Footer module begins -->
         <footer>
             <p><a href="#">Back to top</a></p>
-            <p>&copy; 2015 AUSTIN'S PICK YOUR OWN. All rights reserved.</p>
+            <p>&copy; <?php echo date("Y"); ?> AUSTIN'S PICK YOUR OWN. All rights reserved.</p>
         </footer>
         <!-- Footer module ends -->
     </div>

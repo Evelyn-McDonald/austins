@@ -1,7 +1,7 @@
 // Pull top 3 newsfeed stories from fb page
 // FB user-id: 137912086409500
 $(document).ready(function() {
-	var url = "https://graph.facebook.com/v2.2/137912086409500/posts?access_token=CAACEdEose0cBAF2bZBgokIPVmJH3pitNMEYLR0bNCs4je1z805k3MaXnJySSZB4gpdAZALNItLx1GlNg1bfIMkywKkH0wB8jmJcBFpziKLOEa0WPdROFzohwXPZAcsZBqX30oEP38x3aZA3j2FGO0ZBSQHGcZAYkZAN83s7bvHvF0B2WtnO2kuGjzOlUqkprIEinn9QU3UdwMXZC2YkkmkKB3T&limit=3";
+	var url = "https://graph.facebook.com/v2.2/137912086409500/posts?access_token=671178789694012|1MpxcXmap2SfIiiJDEPtyAa9-sM&limit=3";
 
 	$.getJSON( url, function(json) {
 		var html = "<ul>";
