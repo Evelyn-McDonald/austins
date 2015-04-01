@@ -41,48 +41,21 @@
 </head>
 
 <body>
-    <!-- Facebook graph -->
-    <!--<script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '671178789694012',
-          xfbml      : true,
-          version    : 'v2.1'
-        });
-        /* make the API call */
-        FB.api(
-            "/137912086409500/feed",
-            function (response) {
-              if (response && !response.error) {
-                /* handle the result */
-              }
-            }
-        );
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>-->
-    <!-- Facebook graph end -->
-
-    <!-- <div id="fb-root"></div>  -->
-
     <!-- Header module begins -->
     <header>
         <div class="logo">
         <img src="images/logo.png"/>
         </div>
-        <img src="images/years-in-produce.png"/>
+        <div class="copy">
+            <p>PYO Berries: 519.443.5837</p>
+            <p>Produce Stand: 519.443.4909</p>
+            <h4>37 years in berry produce!</h4>
+        </div>
         <nav>
-            <a href="our-approach">M&S Seed</a>
-            <a href="services">Contact</a>
-            <a href="about">Produce</a>
-            <a href="contact">Our Story</a>            
+            <a href="#contact">Contact</a>
+            <a href="#ms-seed">M&S Seed</a>
+            <a href="#produce">Produce</a>
+            <a href="#our-story">Our Story</a>            
         </nav>
     </div>
     </header>
@@ -123,7 +96,7 @@
         <!-- main content module ends -->
 
         <!-- our family story module -->
-        <section>
+        <section id="our-story">
             <div class="copy">
                 <h2><img src="images/family-story.png"/></h2>
                 <h3>Originated by the family of Glen and Jean Austin, the farm has been providing Norfolk with pre-picked and pick your own produce for 36 years. </h3>
@@ -136,62 +109,62 @@
         <!-- our family story module -->
 
         <!-- our produce module -->
-        <section class="alt-section">
+        <section id="produce" class="alt-section produce">
             <h2><img src="images/fresh-produce.png"/></h2>
             <p>Pellentesque id sollicitudin enim. Cras sodales sit amet nibh eu tempor. Quisque viverra vel libero et consectetur. Vivamus nisi ex, gravida vel imperdiet et, mollis sed nunc.</p>
             <ul class="produce-list">
                 <li>
-                    <img src=""/>
+                    <img src="images/produce-icon-asparagus.png"/>
                     <h3>Asparagus</h3>
                     <p>May</p>
                 </li>
                 <li>
-                    <img src=""/>
+                    <img src="images/produce-icon-apple.png"/>
                     <h3>Apples</h3>
                     <p>September</p>
                 </li>
                 <li>
-                    <img src=""/>
+                    <img src="images/produce-icon-beet.png"/>
                     <h3>Beets</h3>
                     <p>July</p>
                 </li>
                 <li>
-                    <img src=""/>
-                    <h3>Green/yello beans</h3>
+                    <img src="images/produce-icon-beans.png"/>
+                    <h3>Green/yellow beans</h3>
                     <p>June, July, August</p>
                 </li>
                 <li>
-                    <img src=""/>
+                    <img src="images/produce-icon-pear.png"/>
                     <h3>Pears</h3>
                     <p>September</p>
                 </li>
                 <li>
-                    <img src=""/>
+                    <img src="images/produce-icon-pepper.png"/>
                     <h3>Peppers</h3>
                     <p>August</p>
                 </li>
                 <li>
-                    <img src=""/>
+                    <img src="images/produce-icon-plum.png"/>
                     <h3>Plums</h3>
                     <p>September</p>
                 </li>
                 <li>
-                    <img src=""/>
+                    <img src="images/produce-icon-pumpkin.png"/>
                     <h3>Pumpkins/Squash</h3>
                     <p>September, October</p>
                 </li>
                 <li>
-                    <img src=""/>
+                    <img src="images/produce-icon-raspberry.png"/>
                     <h3>Raspberries</h3>
                     <p>June, July</p>
                 </li>
                 <li>
-                    <img src=""/>
+                    <img src="images/produce-icon-strawberry.png"/>
                     <h3>Strawberries</h3>
                     <p>June, July</p>
                 </li>
                 <li>
-                    <img src=""/>
+                    <img src="images/produce-icon-corn.png"/>
                     <h3>Sweet Corn</h3>
                     <p>July, August, September</p>
                 </li>
@@ -200,7 +173,7 @@
         <!-- our product module ends -->
 
         <!-- M&S seeds module -->
-        <section>
+        <section id="ms-seed">
             <div class="copy">
                 <h2><img src="images/ms-seed.png"/></h2>
                 <h3>OrDonec nec convallis mauris. Maecenas et massa dolor. Cras cursus dolor ac auctor ullamcorper Mauris.</h3>
@@ -213,7 +186,7 @@
         <!-- M&S seeds module ends -->
 
         <!-- contact us module -->
-        <section class="alt-section">
+        <section id="contact" class="alt-section">
             <div class="map">
                 <!-- <iframe width="600" height="450" frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?q=2591+Cockshutt+Road,+Waterford,+Ontario+N0E+1Y0,+Canada&key=AIzaSyCJzmzjqgA4k4S_sNOZcNq5C7DZsa9HBVA"></iframe> -->
