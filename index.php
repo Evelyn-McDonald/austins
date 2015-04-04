@@ -9,6 +9,7 @@
     <title>Austin's Strawberries</title>
     <link rel="icon" type="image/icon" href="assets/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -42,8 +43,8 @@
 
 <body>
     <!-- Header module begins -->
-    <header>
-        <div class="logo">
+    <header class="logo wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0s">
+        <div class="logo wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">
         <img src="images/logo.png"/>
         </div>
         <div class="copy">
@@ -52,25 +53,38 @@
             <h4>37 years in berry produce!</h4>
         </div>
         <nav>
-            <a href="#contact">Contact</a>
-            <a href="#ms-seed">M&S Seed</a>
-            <a href="#produce">Produce</a>
-            <a href="#our-story">Our Story</a>            
+            <div class="desktop-menu">
+                <a href="#contact">Contact</a>
+                <a href="#ms-seed">M&S Seed</a>
+                <a href="#produce">Produce</a>
+                <a href="#our-story">Our Story</a>  
+            </div>
+            <div class="mobile-menu-toggle">
+                <a href="#contact">Menu</a>
+            </div> 
+            <!-- <div class="mobile-menu">
+                <a href="#contact">Contact</a>
+                <a href="#ms-seed">M&S Seed</a>
+                <a href="#produce">Produce</a>
+                <a href="#our-story">Our Story</a>  
+            </div>     -->       
         </nav>
     </div>
     </header>
     <!-- Header module ends -->
 
-    <div class="hero">
-        <img src="images/hero.png"/>
+    <div class="hero wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+        <img class="desktop" src="images/hero.png"/>
+        <img class="mobile" src="images/hero-mobile.png"/>
     </div>
 
-    <!-- <div class="leaves">
-        <img src="images/grunge-leaves.png"/>
-    </div> -->
+    
     
     <!-- Content module begins -->
-    <div class="content-container">
+    <div class="content-container wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.2s">
+        <div class="leaves" >
+            <img src="images/grunge-leaves.png"/>
+        </div>
         <!-- main content module -->
         <section class="main">
             <div class="main-card">
@@ -174,32 +188,35 @@
 
         <!-- M&S seeds module -->
         <section id="ms-seed">
+            
+            <div class="image">
+                <img src="images/corn.jpg"/>
+            </div>
             <div class="copy">
                 <h2><img src="images/ms-seed.png"/></h2>
                 <h3>OrDonec nec convallis mauris. Maecenas et massa dolor. Cras cursus dolor ac auctor ullamcorper Mauris.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate, metus at eleifend fringilla, diam lacus venenatis augue, sollicitudin semper tortor leo non magna. Nam pulvinar rhoncus pharetra. Donec ac lacus quam. Nulla iaculis facilisis molestie. Phasellus luctus mollis ipsum, volutpat tristique orci lacinia sed. Morbi pulvinar eget metus et maximus. Vivamus pulvinar porttitor leo, nec scelerisque justo ultrices quis.</p>
-            </div>
-            <div class="image">
-                <img src="images/corn.jpg"/>
             </div>
         </section>
         <!-- M&S seeds module ends -->
 
         <!-- contact us module -->
         <section id="contact" class="alt-section">
+            <div class="directions">
+                <h2><img src="images/get-in-touch.png"/></h2>
+                <p>123 Cockshutt Road<br>Waterford, ON<br>G9J Y5S</p>
+                <p>123.456.7890<br>876.543.2211</p>
+                <form>
+                    <label for="saddr"><h3>Enter your location</h3></label>
+                    <input type="text" name="saddr" placeholder="Where are you?"/>
+                    <input type="hidden" name="daddr" value="2591 Cockshutt Road, Waterford, Ontario N0E 1Y0, Canada" /></button>
+                    <button onclick="calcRoute()">Get directions</button>
+                </form>
+            </div>
             <div class="map">
                 <!-- <iframe width="600" height="450" frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?q=2591+Cockshutt+Road,+Waterford,+Ontario+N0E+1Y0,+Canada&key=AIzaSyCJzmzjqgA4k4S_sNOZcNq5C7DZsa9HBVA"></iframe> -->
                 <div id="map-canvas"></div>
-            </div>
-            <div class="directions">
-                <h2><img src="images/get-in-touch.png"/>
-                <form>
-                    <label for="saddr">Enter your location</label>
-                    <input type="text" name="saddr" />
-                    <input type="hidden" name="daddr" value="2591 Cockshutt Road, Waterford, Ontario N0E 1Y0, Canada" /></button>
-                    <button onclick="calcRoute()">Get directions</button>
-                </form>
             </div>
         </section>
         <!-- contact us module ends -->
@@ -216,6 +233,7 @@
     
     <!-- Footer scripts -->
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/scripts.js"></script>
     
 </body>

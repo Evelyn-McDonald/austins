@@ -1,3 +1,8 @@
+// Initialize animations
+$(function() {
+	new WOW().init();
+});
+
 // Pull top 3 newsfeed stories from fb page
 // FB user-id: 137912086409500
 $(document).ready(function() {

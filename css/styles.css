@@ -40,6 +40,9 @@ body {
       padding-right: 30px;
       margin-top: 10px;
       text-align: right; }
+      @media screen and (max-width: 520px) {
+        body header .copy {
+          display: none; } }
       body header .copy h4 {
         color: #ccc;
         font-size: 20px;
@@ -68,33 +71,80 @@ body {
           border-right: 1px #fff dashed; }
         body header nav a:hover {
           text-decoration: underline; }
+      @media screen and (max-width: 820px) {
+        body header nav .desktop-menu {
+          display: none; } }
+      body header nav .mobile-menu-toggle {
+        display: none; }
+        @media screen and (max-width: 820px) {
+          body header nav .mobile-menu-toggle {
+            display: block; } }
+      body header nav .mobile-menu {
+        clear: both; }
+        body header nav .mobile-menu a {
+          width: 100%; }
   body .hero {
-    height: 308px;
+    height: auto;
     text-align: center; }
+    body .hero img {
+      height: auto;
+      max-width: 1140px;
+      width: 100%; }
+    @media screen and (max-width: 500px) {
+      body .hero .desktop {
+        display: none; } }
+    body .hero .mobile {
+      display: none; }
+      @media screen and (max-width: 500px) {
+        body .hero .mobile {
+          display: inline-block; } }
   body .leaves img {
-    z-index: 1; }
+    left: -230px;
+    top: -150px;
+    z-index: -1;
+    position: absolute; }
+  @media screen and (max-width: 1000px) {
+    body .leaves {
+      display: none; } }
   body .content-container {
     background-color: #fff;
     max-width: 1000px;
     margin: 0 auto 0;
+    position: relative;
     width: 100%;
     z-index: 100;
-    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1); }
+    -webkit-box-shadow: 0px 5px 31px 0px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 5px 31px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 5px 31px 0px rgba(0, 0, 0, 0.45);
+    /* contact section styles */ }
     body .content-container section {
-      overflow: auto;
-      padding: 70px; }
+      overflow: hidden;
+      padding: 70px;
+      /* produce list styles */ }
+      @media screen and (max-width: 900px) {
+        body .content-container section {
+          padding: 50px 40px; } }
       body .content-container section.alt-section {
         background-color: #f8f8f8; }
       body .content-container section .copy {
         float: left;
         width: 55%; }
+        @media screen and (max-width: 780px) {
+          body .content-container section .copy {
+            width: 100%; } }
       body .content-container section .image {
         float: left;
         width: 45%; }
+        body .content-container section .image img {
+          width: 100%;
+          height: auto;
+          max-width: 400px; }
+        @media screen and (max-width: 780px) {
+          body .content-container section .image {
+            width: 100%; } }
       body .content-container section.main {
-        background: #fff url(../images/fields.png) center bottom no-repeat; }
+        background: #fff url(../images/fields.png) center bottom no-repeat;
+        /* FB feed styles */ }
         body .content-container section.main .main-card {
           background-color: #fff;
           border: 1px solid #fafafa;
@@ -112,6 +162,12 @@ body {
           -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1);
           -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1); }
+          @media screen and (max-width: 800px) {
+            body .content-container section.main .main-card {
+              width: 43%; } }
+          @media screen and (max-width: 560px) {
+            body .content-container section.main .main-card {
+              width: 100%; } }
           body .content-container section.main .main-card img {
             margin: -60px auto 0; }
           body .content-container section.main .main-card h3, body .content-container section.main .main-card p {
@@ -120,6 +176,12 @@ body {
           float: left;
           margin: 0 15px;
           width: 30%; }
+          @media screen and (max-width: 800px) {
+            body .content-container section.main .fb-news-container {
+              width: 100%; } }
+          @media screen and (max-width: 560px) {
+            body .content-container section.main .fb-news-container {
+              width: 100%; } }
           body .content-container section.main .fb-news-container h2 {
             color: #303030;
             display: inline;
@@ -149,21 +211,12 @@ body {
                 body .content-container section.main .fb-news-container #fb-news ul li p.date {
                   font-weight: bold;
                   margin-top: 0; }
-      body .content-container section .map {
-        float: left;
-        margin-right: 4%;
-        width: 48%; }
-        body .content-container section .map #map-canvas {
-          height: 300px; }
-      body .content-container section .directions {
-        float: left;
-        width: 48%; }
       body .content-container section.produce p {
         margin: 0px auto 50px;
         text-align: center;
-        width: 600px; }
+        max-width: 600px; }
       body .content-container section.produce .produce-list {
-        overflow: auto;
+        overflow: hidden;
         padding: 0; }
         body .content-container section.produce .produce-list li {
           float: left;
@@ -171,6 +224,12 @@ body {
           margin-bottom: 30px;
           text-align: left;
           width: 33%; }
+          @media screen and (max-width: 820px) {
+            body .content-container section.produce .produce-list li {
+              width: 50%; } }
+          @media screen and (max-width: 525px) {
+            body .content-container section.produce .produce-list li {
+              width: 100%; } }
           body .content-container section.produce .produce-list li img {
             float: left;
             padding-right: 8px; }
@@ -180,6 +239,64 @@ body {
             margin-top: 4px;
             margin-bottom: 0;
             text-align: left; }
+    body .content-container #contact {
+      padding: 0; }
+      body .content-container #contact .map {
+        float: left;
+        width: 50%; }
+        @media screen and (max-width: 780px) {
+          body .content-container #contact .map {
+            width: 100%; } }
+      body .content-container #contact #map-canvas {
+        height: 508px; }
+      body .content-container #contact .directions {
+        float: left;
+        padding: 70px 70px 70px 70px;
+        width: 50%;
+        -webkit-box-sizing: border-box;
+        /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;
+        /* Firefox, other Gecko */
+        box-sizing: border-box; }
+        @media screen and (max-width: 780px) {
+          body .content-container #contact .directions {
+            width: 100%; } }
+        @media screen and (max-width: 900px) {
+          body .content-container #contact .directions {
+            padding: 50px 40px; } }
+        body .content-container #contact .directions p {
+          float: left;
+          width: 50%; }
+        body .content-container #contact .directions form {
+          clear: both;
+          padding-top: 10px; }
+        body .content-container #contact .directions input {
+          background: url(../images/map-pin.png) no-repeat 95% 50%;
+          border: 1px solid #e1e1e1;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          display: block;
+          font-size: 14px;
+          margin: 0px 0 20px;
+          padding: 12px;
+          width: 100%;
+          -webkit-box-sizing: border-box;
+          /* Safari/Chrome, other WebKit */
+          -moz-box-sizing: border-box;
+          /* Firefox, other Gecko */
+          box-sizing: border-box; }
+        body .content-container #contact .directions button {
+          background-color: #750000;
+          border: none;
+          border: 1px solid #e1e1e1;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 300;
+          padding: 12px 36px; }
     body .content-container footer {
       background-color: #201d1d;
       color: #fff;
