@@ -42,6 +42,10 @@
 </head>
 
 <body>
+    <div id="loading"></div>
+
+    <div id="content">
+
     <!-- Header module begins -->
     <header class="logo wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0s">
         <div class="logo wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">
@@ -69,7 +73,6 @@
                 <a href="#our-story">Our Story</a>  
             </div>     -->       
         </nav>
-    </div>
     </header>
     <!-- Header module ends -->
 
@@ -236,5 +239,6 @@
     <script src="js/wow.min.js"></script>
     <script src="js/scripts.js"></script>
     
+    </div>
 </body>
 </html>

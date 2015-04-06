@@ -3,6 +3,12 @@ $(function() {
 	new WOW().init();
 });
 
+// hide loader and show content
+$(window).ready(function() {
+    $('#loading').hide();
+    $('#content').show();
+});
+
 // Pull top 3 newsfeed stories from fb page
 // FB user-id: 137912086409500
 $(document).ready(function() {
