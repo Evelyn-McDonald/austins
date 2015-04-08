@@ -9,6 +9,17 @@ $(window).ready(function() {
     $('#content').show();
 });
 
+// Menu toggle
+$( "#mobile-menu-toggle" ).click(function() {
+	$( "#mobile-menu" ).toggle();
+	if ($(this).find('a').text() == "Menu") {
+		$(this).find('a').text("Close");
+	}
+	else {
+		$(this).find('a').text("Menu");
+	}
+});
+
 // Pull top 3 newsfeed stories from fb page
 // FB user-id: 137912086409500
 $(document).ready(function() {

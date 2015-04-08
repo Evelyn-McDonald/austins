@@ -7,7 +7,7 @@
     <meta name="keywords" content="berry, strawberry, raspberry, seeds, pioneer, agriculture, produce, local, vegetables, fruit" />
     <meta name="viewport" content="width=device-width">
     <title>Austin's Strawberries</title>
-    <link rel="icon" type="image/icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="css/animate.css"/>
 
@@ -63,20 +63,21 @@
                 <a href="#produce">Produce</a>
                 <a href="#our-story">Our Story</a>  
             </div>
-            <div class="mobile-menu-toggle">
-                <a href="#contact">Menu</a>
+            <div id="mobile-menu-toggle">
+                <a>Menu</a>
             </div> 
-            <!-- <div class="mobile-menu">
-                <a href="#contact">Contact</a>
-                <a href="#ms-seed">M&S Seed</a>
-                <a href="#produce">Produce</a>
-                <a href="#our-story">Our Story</a>  
-            </div>     -->       
+                 
         </nav>
     </header>
     <!-- Header module ends -->
 
     <div class="hero wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+        <div id="mobile-menu">
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#ms-seed">M&S Seed</a></li>
+            <li><a href="#produce">Produce</a></li>
+            <li><a href="#our-story">Our Story</a></li>  
+        </div>      
         <img class="desktop" src="images/hero.png"/>
         <img class="mobile" src="images/hero-mobile.png"/>
     </div>
@@ -84,7 +85,7 @@
     
     
     <!-- Content module begins -->
-    <div class="content-container wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.2s">
+    <div class="content-container wow " data-wow-duration="0.5s" data-wow-delay="1.2s">
         <div class="leaves" >
             <img src="images/grunge-leaves.png"/>
         </div>
@@ -207,8 +208,14 @@
         <section id="contact" class="alt-section">
             <div class="directions">
                 <h2><img src="images/get-in-touch.png"/></h2>
-                <p>123 Cockshutt Road<br>Waterford, ON<br>G9J Y5S</p>
-                <p>123.456.7890<br>876.543.2211</p>
+                <div class="contact-col">
+                    <img src="/images/map-pin.png"/>
+                    <p>2591 Cockshutt Rd.<br>Waterford, ON<br>N0E 1Y0</p>
+                </div>
+                <div class="contact-col">
+                    <img src="images/phone-icon.png"/>
+                    <p>519.443.4909<br>mark.sloot@plantpioneer.com</p>
+                </div>
                 <form>
                     <label for="saddr"><h3>Enter your location</h3></label>
                     <input type="text" name="saddr" placeholder="Where are you?"/>
