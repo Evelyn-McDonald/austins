@@ -100,7 +100,7 @@
         <section id="our-story">
             <div class="copy">
                 <h2><img src="images/family-story.png"/></h2>
-                <h3>Originated by the family of Glen and Jean Austin, the farm has been providing Norfolk with pre-picked and pick your own produce for 36 years. </h3>
+                <h3>Originated by the family of Glen and Jean Austin, the farm has been providing Norfolk with pre-picked and pick your own produce for 37 years. </h3>
                 <p>The farm was sold to Mark and Maureen Sloot, nee Austin, who have been operating it with their three children for 16 years.The family specialized in strawberries but expanded into different crops to meet the substantial requests of their customers. The farm is conveniently located south of Boston, Ontario on Cockshutt Road. The farm is simply minutes from Hamilton, highway 403 and Port Dover.Austin's Pick Your Own takes pride in maintaining locally grown and produced fruits and vegetables for their road-side stand that you can buy with piece of mind.</p>
             </div>
             <div class="image">
@@ -192,7 +192,7 @@
             <div class="directions">
                 <h2><img src="images/get-in-touch.png"/></h2>
                 <div class="contact-col">
-                    <img src="/images/map-pin.png"/>
+                    <img src="images/map-pin.png"/>
                     <p>2591 Cockshutt Rd.<br>Waterford, ON<br>N0E 1Y0</p>
                 </div>
                 <div class="contact-col">
