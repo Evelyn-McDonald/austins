@@ -30,7 +30,8 @@ $(document).ready(function() {
 		$.each(json.data, function(i,fb){
 			html += "<li>";
 			html += "<a href='" + fb.link + "'> <img src='" + fb.picture + "'/> </a>";
-			html += "<p class='date'>" + fb.created_time + "</p>";
+			var dt = new Date(fb.created_time.substring(0, 10));
+			html += "<p class='date'>" + dt.toDateString().substring(4, 10) + ", " + dt.toDateString().substring(11,15) + "</p>";
 			html += "<a href='" + fb.link + "'> <p>" + fb.message + "</p> </a>";
 			html += "</li>";
 		});
@@ -41,34 +42,43 @@ $(document).ready(function() {
 
 
 // Google get directions 
-// var directionsDisplay;
-// //var directionsService = new google.maps.DirectionsService();
-// var map;
+var directionsDisplay;
+var directionsService = new google.maps.DirectionsService();
+var map;
 
-// function initialize() {
-//   directionsDisplay = new google.maps.DirectionsRenderer();
-//   var chicago = new google.maps.LatLng(41.850033, -87.6500523);
-//   var mapOptions = {
-//     zoom:7,
-//     center: chicago
-//   };
-//   map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-//   directionsDisplay.setMap(map);
-// }
+function initialize() {
+	directionsDisplay = new google.maps.DirectionsRenderer();
+	var chicago = new google.maps.LatLng(41.850033, -87.6500523);
+	var mapOptions = {
+		zoom:9,
+		center: { lat: 42.965063, lng: -80.259830},
+		scrollwheel: false,
+		draggable: false
+	};
+	map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+	var marker = new google.maps.Marker({
+		position: { lat: 42.965063, lng: -80.259830},
+		map: map,
+		title: "Austin's PYO"
+	});
+	directionsDisplay.setMap(map);
+}
 
-//google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', initialize);
 
-// function calcRoute() {
-//   var start = document.getElementById("start").value;
-//   var end = "2591 Cockshutt Road, Waterford, Ontario N0E 1Y0, Canada";
-//   var request = {
-//     origin:start,
-//     destination:end,
-//     travelMode: google.maps.TravelMode.DRIVING
-//   };
-//   directionsService.route(request, function(result, status) {
-//     if (status == google.maps.DirectionsStatus.OK) {
-//       directionsDisplay.setDirections(result);
-//     }
-//   });
-// }
+function calcRoute() {
+	var start = document.getElementById("start").value;
+	console.log(start);
+	var end = "2591 Cockshutt Road, Waterford, Ontario N0E 1Y0, Canada";
+	var request = {
+		origin:start,
+		destination:end,
+		travelMode: google.maps.TravelMode.DRIVING
+	};
+	directionsService.route(request, function(result, status) {
+		if (status == google.maps.DirectionsStatus.OK) {
+	  		directionsDisplay.setDirections(result);
+		}
+	});
+}
+

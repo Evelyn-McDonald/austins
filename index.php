@@ -23,22 +23,6 @@
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJzmzjqgA4k4S_sNOZcNq5C7DZsa9HBVA">
     </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: { lat: 42.965063, lng: -80.259830},
-          zoom: 9
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-        var marker = new google.maps.Marker({
-            position: { lat: 42.965063, lng: -80.259830},
-            map: map,
-            title: "Austin's PYO"
-        });
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
 </head>
 
 <body>
@@ -94,15 +78,14 @@
             <div class="main-card">
                 <img src="images/clock.png"/>
                 <h3>Hours of operation</h3>
-                <p>Cockshutt Road-side Stand:</p>
-                <p>10am - 6pm</p>
-                <p>Pick-Your-Own Berries:</p>
-                <P>8am - 8pm</p>
+                <p>Cockshutt Road-side Stand:<br>10am - 6pm</p>
+                <p>Pick-Your-Own Berries:<br>8am - 8pm</p>
             </div>
             <div class="main-card">
                 <img src="images/envelope.png"/>
                 <h3>How to contact us</h3>
-                <p>Cockshutt Road-side Stand:</p>
+                <p>Cockshutt Road-side Stand:<br>(519)  443-4909</p>
+                <p>PYO Berries:<br>(519) 443-5837</p>      
             </div>
             <div class="fb-news-container">
                 <h2>Tasty </h2><h2>News!</h2>
@@ -218,9 +201,8 @@
                 </div>
                 <form>
                     <label for="saddr"><h3>Enter your location</h3></label>
-                    <input type="text" name="saddr" placeholder="Where are you?"/>
-                    <input type="hidden" name="daddr" value="2591 Cockshutt Road, Waterford, Ontario N0E 1Y0, Canada" /></button>
-                    <button onclick="calcRoute()">Get directions</button>
+                    <input id="start" type="text" name="saddr" placeholder="Where are you?"/>
+                    <button onclick="calcRoute(); return false">Get directions</button>
                 </form>
             </div>
             <div class="map">
