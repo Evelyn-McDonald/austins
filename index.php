@@ -101,7 +101,7 @@
             <div class="copy">
                 <h2><img src="images/family-story.png"/></h2>
                 <h3>Originated by the family of Glen and Jean Austin, the farm has been providing Norfolk with pre-picked and pick your own produce for 37 years. </h3>
-                <p>The farm was sold to Mark and Maureen Sloot, nee Austin, who have been operating it with their three children for 16 years.The family specialized in strawberries but expanded into different crops to meet the substantial requests of their customers. The farm is conveniently located south of Boston, Ontario on Cockshutt Road. The farm is simply minutes from Hamilton, highway 403 and Port Dover.Austin's Pick Your Own takes pride in maintaining locally grown and produced fruits and vegetables for their road-side stand that you can buy with piece of mind.</p>
+                <p>The farm was sold to Mark and Maureen Sloot, nee Austin, who have been operating it with their three children for 18 years. The family specialized in strawberries but expanded into different crops to meet the substantial requests of their customers. The farm is conveniently located south of Boston, Ontario on Cockshutt Road. The farm is simply minutes from Hamilton, highway 403 and Port Dover. Austin's Pick Your Own takes pride in maintaining locally grown and produced fruits and vegetables for their road-side stand that you can buy with piece of mind.</p>
             </div>
             <div class="image">
                 <img src="images/berry-bowl.png"/>
@@ -112,7 +112,7 @@
         <!-- our produce module -->
         <section id="produce" class="alt-section produce">
             <h2><img src="images/fresh-produce.png"/></h2>
-            <p>Pellentesque id sollicitudin enim. Cras sodales sit amet nibh eu tempor. Quisque viverra vel libero et consectetur. Vivamus nisi ex, gravida vel imperdiet et, mollis sed nunc.</p>
+            <p>Experience all of the benefits of buying fresh, local produce when you visit our road-side vegetable and fruit stand. Not only will you get great value, but you will help to strengthen communities, support local families and invest in the future.</p>
             <ul class="produce-list">
                 <li>
                     <img src="images/produce-icon-asparagus.png"/>
@@ -181,8 +181,9 @@
             </div>
             <div class="copy">
                 <h2><img src="images/ms-seed.png"/></h2>
-                <h3>OrDonec nec convallis mauris. Maecenas et massa dolor. Cras cursus dolor ac auctor ullamcorper Mauris.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate, metus at eleifend fringilla, diam lacus venenatis augue, sollicitudin semper tortor leo non magna. Nam pulvinar rhoncus pharetra. Donec ac lacus quam. Nulla iaculis facilisis molestie. Phasellus luctus mollis ipsum, volutpat tristique orci lacinia sed. Morbi pulvinar eget metus et maximus. Vivamus pulvinar porttitor leo, nec scelerisque justo ultrices quis.</p>
+                <h3>Helping farmers in the Norfolk area plant for higher yields and profitability to maximize field's potential.</h3>
+                <p>When success is measured field by field, it takes broad knowledge and experience to pinpoint answers for individual growers. We bring extensive information and local experience to each field. Backed by the advanced research capabilities of Pioneer, we live and work just down the road from you. Combine this with Pioneer's broad product lineup and services and we will deliver solutions to match your needs and maximize yields.</p>
+                <p><a href="http://mark.sloot.growingpoint.com/" target="_blank">Learn more <img src="images/black-arrow.png"></a></p>
             </div>
         </section>
         <!-- M&S seeds module ends -->

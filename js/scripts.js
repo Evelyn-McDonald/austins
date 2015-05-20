@@ -32,7 +32,9 @@ $(document).ready(function() {
 			html += "<a href='" + fb.link + "'> <img src='" + fb.picture + "'/> </a>";
 			var dt = new Date(fb.created_time.substring(0, 10));
 			html += "<p class='date'>" + dt.toDateString().substring(4, 10) + ", " + dt.toDateString().substring(11,15) + "</p>";
-			html += "<a href='" + fb.link + "'> <p>" + fb.message + "</p> </a>";
+			if (fb.message) {
+				html += "<a href='" + fb.link + "'> <p>" + fb.message + "</p> </a>";
+			}
 			html += "</li>";
 		});
 		html += "</ul>";
