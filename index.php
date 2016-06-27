@@ -31,14 +31,14 @@
     <div id="content">
 
     <!-- Header module begins -->
-    <header class="logo wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0s">
-        <div class="logo wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">
-        <img src="images/logo.png"/>
+    <header class="logo">
+        <div class="logo wow fadeInDown" data-wow-duration="0.4s">
+            <img src="images/logo.png"/>
         </div>
         <div class="copy">
-            <p>PYO Berries: 519.443.5837</p>
-            <p>Produce Stand: 519.443.4909</p>
-            <h4>37 years in berry produce!</h4>
+            <p>Pick-Your-Own Berries: 519.443.5837</p>
+            <p>Roadside Farm Market: 519.443.4909</p>
+            <h4><?php echo date('Y') - 1974; ?> years in berry produce!</h4>
         </div>
         <nav>
             <div class="desktop-menu">
@@ -78,14 +78,14 @@
             <div class="main-card">
                 <img src="images/clock.png"/>
                 <h3>Hours of operation</h3>
-                <p>Cockshutt Road-side Stand:<br>10am - 6pm</p>
                 <p>Pick-Your-Own Berries:<br>8am - 8pm</p>
+                <p>Roadside Farm Market:<br>10am - 6pm</p>
             </div>
             <div class="main-card">
                 <img src="images/envelope.png"/>
                 <h3>How to contact us</h3>
-                <p>Cockshutt Road-side Stand:<br>(519)  443-4909</p>
-                <p>PYO Berries:<br>(519) 443-5837</p>      
+                <p>Roadside Farm Market:<br>(519)  443-4909</p>
+                <!-- <p>Pick-Your-Own Berries:<br>(519) 443-5837</p>       -->
             </div>
             <div class="fb-news-container">
                 <h2>Tasty </h2><h2>News!</h2>
@@ -100,8 +100,8 @@
         <section id="our-story">
             <div class="copy">
                 <h2><img src="images/family-story.png"/></h2>
-                <h3>Originated by the family of Glen and Jean Austin, the farm has been providing Norfolk with pre-picked and pick your own produce for 37 years. </h3>
-                <p>The farm was sold to Mark and Maureen Sloot, nee Austin, who have been operating it with their three children for 18 years. The family specialized in strawberries but expanded into different crops to meet the substantial requests of their customers. The farm is conveniently located south of Boston, Ontario on Cockshutt Road. The farm is simply minutes from Hamilton, highway 403 and Port Dover. Austin's Pick Your Own takes pride in maintaining locally grown and produced fruits and vegetables for their road-side stand that you can buy with piece of mind.</p>
+                <h3>Originated by the family of Glen and Jean Austin, the farm has been providing Norfolk with pre-picked and pick your own produce for <?php echo date('Y') - 1974; ?> years. </h3>
+                <p>The farm was sold to Mark and Maureen Sloot, nee Austin, who have been operating it with their three children since 1995. The family specialized in strawberries but expanded into different crops to meet the substantial requests of their customers. The farm is conveniently located south of Boston, Ontario on Cockshutt Road. The farm is simply minutes from Hamilton, highway 403 and Port Dover. Austin's Pick Your Own takes pride in maintaining locally grown and produced fruits and vegetables for their road-side stand that you can buy with piece of mind.</p>
             </div>
             <div class="image">
                 <img src="images/berry-bowl.png"/>
