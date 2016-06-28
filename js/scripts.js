@@ -3,8 +3,8 @@ $(function() {
 	new WOW().init();
 
 	var current = new Date().getFullYear();;
-	$('.current-year').html(current - 1974);
-	$('.current-years').html(current);
+	$('.current-year').html(current);
+	$('.current-years').html(current - 1974);
 });
 
 // hide loader and show content
