@@ -1,6 +1,10 @@
 // Initialize animations
 $(function() {
 	new WOW().init();
+
+	var current = new Date().getFullYear();;
+	$('.current-year').html(current - 1974);
+	$('.current-years').html(current);
 });
 
 // hide loader and show content
@@ -36,7 +40,7 @@ $(document).ready(function() {
 			}
 			html += "<li>";
 			if (!fb.picture) { 
-				html += "<a href='" + link + "'> <img src='../images/default-feed-img.jpg'/> </a>";
+				html += "<a href='" + link + "'> <img src='images/default-feed-img.jpg'/> </a>";
 			}
 			else {
 				html += "<a href='" + link + "'> <img src='" + fb.picture + "'/> </a>";	
