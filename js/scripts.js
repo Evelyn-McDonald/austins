@@ -32,23 +32,19 @@ $(document).ready(function() {
 	$.getJSON( url, function(json) {
 		var html = "<ul>";
 		$.each(json.data, function(i,fb){
-			if (!fb.link) {
-				var link = "https://www.facebook.com/AustinsPickYourOwn";
-			}
-			else {
-				var link = fb.link;
-			}
+			var link = "https://www.facebook.com/AustinsPickYourOwn";
+
 			html += "<li>";
 			if (!fb.picture) { 
-				html += "<a href='" + link + "'> <img src='images/default-feed-img.jpg'/> </a>";
+				html += "<a href='" + link + "' target='_top'> <img src='images/default-feed-img.jpg'/> </a>";
 			}
 			else {
-				html += "<a href='" + link + "'> <img src='" + fb.picture + "'/> </a>";	
+				html += "<a href='" + link + "' target='_top'> <img src='" + fb.picture + "'/> </a>";	
 			}
 			var dt = new Date(fb.created_time.substring(0, 10));
 			html += "<p class='date'>" + dt.toDateString().substring(4, 10) + ", " + dt.toDateString().substring(11,15) + "</p>";
 			if (fb.message) {
-				html += "<a href='" + link + "'> <p>" + fb.message.substring(0,100) + "</p> </a>";
+				html += "<a href='" + link + "' target='_top'> <p>" + fb.message.substring(0,100) + "</p> </a>";
 			}
 			html += "</li>";
 		});
