@@ -65,13 +65,14 @@ body {
         body header .copy {
           display: none; } }
       body header .copy h4 {
-        color: #ccc;
+        color: #adb2b5;
         font-size: 20px;
         font-weight: bold; }
       body header .copy p {
-        color: #ccc;
+        color: #adb2b5;
         font-size: 12px;
-        line-height: 10px; }
+        line-height: 10px; 
+        font-weight: normal;}
     body header nav {
       background-color: #201d1d;
       bottom: 0px;

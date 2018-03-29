@@ -82,7 +82,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 function calcRoute() {
 	var start = document.getElementById("start").value;
 	console.log(start);
-	var end = "2591 Cockshutt Road, Waterford, Ontario N0E 1Y0, Canada";
+	var end = "2587 Cockshutt Road, Waterford, Ontario N0E 1Y0, Canada";
 	var request = {
 		origin:start,
 		destination:end,
