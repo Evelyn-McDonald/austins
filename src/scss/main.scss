@@ -1,0 +1,11 @@
+@import 'vendor/bootstrap',
+		'vendor/cookieConsent';
+
+@import 'variables',
+        'fonts',
+        'mixins',
+        'theme',
+        'waitlist';
+
+@import 'pages/home',
+		'pages/terms';
