@@ -1,11 +1,8 @@
-@import 'vendor/bootstrap',
-		'vendor/cookieConsent';
+@import 'vendor/bootstrap';
 
 @import 'variables',
         'fonts',
         'mixins',
-        'theme',
-        'waitlist';
+        'theme';
 
-@import 'pages/home',
-		'pages/terms';
+@import 'pages/home';
