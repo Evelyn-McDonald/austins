@@ -1,14 +1,5 @@
 // -------------------------------------
-// Mobile menu
+// Update # years
 // -------------------------------------
-var mobileToggle = document.getElementById('mobile-toggle')
-
-mobileToggle.addEventListener("click", function() {
-    document.body.classList.toggle('open')
-})
-
-document.querySelectorAll('header .nav-links a').forEach(function(a) {
-    a.addEventListener("click", function() {
-        document.body.classList.remove('open')
-    })
-})
+var years = (new Date()).getYear() + 1900 - 1976;
+document.getElementById('years-to-date').innerHTML = years

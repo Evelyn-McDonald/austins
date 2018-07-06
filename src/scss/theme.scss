@@ -18,15 +18,18 @@ body {
 
 h1 {
     color: $white;
-    &:first-of-type {
-        font-size: 67px;
+    &:first-of-type, &:first-of-type * {
+        color: $white;
+        font-size: 70px;
         font-family: $font-bold;
+        line-height: 60px;
         text-transform: uppercase;
         margin: 0;
     }
     &:last-of-type {
         font-size: 53px;
         font-family: $font-regular;
+        line-height: 50px;
         margin: 0 0 40px;
     }
 }
@@ -83,6 +86,10 @@ strong {
     font-family: $font-bold;
 }
 
+.no-padding {
+    padding: 0;
+}
+
 header {
     background: $white;
     height: 60px;
@@ -108,7 +115,19 @@ section {
 footer {
     background: $bg-dark;
     color: $white;
+    padding: 40px 0 20px;
+
     * {
         color: $white;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .legal {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
     }
 }

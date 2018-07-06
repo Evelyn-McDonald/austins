@@ -11,13 +11,13 @@
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-      <meta property="og:image" content=""> <!-- todo add image -->
+      <meta property="og:image" content="static/img/hero-bg.png"> <!-- todo add image -->
       <meta property="og:title" content="Austins">
       <meta property="og:description" content="Austins pick-your-own berries and vegetables.">
       <meta property="og:url" content="https://austinspickyourown.com">
 
       <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:image" content=""> <!-- todo add image -->
+      <meta name="twitter:image" content="static/img/hero-bg.png"> <!-- todo add image -->
       <meta name="twitter:title" content="Austins">
       <meta name="twitter:description" content="Austins pick-your-own berries and vegetables.">
       <meta name="twitter:url" content="https://austinspickyourown.com">
@@ -39,10 +39,10 @@
     <!-- Header -->
     <header>
       <div class="container">
-        <a href="/" title="Go to Austin's homepage"><div class="logo"></div></a>
+        <a href="/" title="Go to Austin's homepage"><div class="logo"></div> - Pick your own berries</a>
         <nav>
           <div class="nav-links">
-            <span>Facebook</span>
+            <span>Check us out on Facebook</span>
           </div>
         </nav>
       </div>
@@ -52,10 +52,10 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <h1>42 years</h1>
+        <h1><span id="years-to-date">42</span> years</h1>
         <h1>in berry produce</h1>
         <div class="latest-news">
-          <span>Latest:</span>
+          <span>Latest: &nbsp;</span>
           <p>Strawberries now in season!</p>
         </div>
       </div>
@@ -67,13 +67,25 @@
         <div class="row">
           <div class="col-md-6">
             <h5>Hours of operation</h5>
-            <p>Pick-your-own berries</p>
-            <p>Farm market</p>
+            <div class="row">
+              <div class="col-md-5"><p>Pick-your-own berries</p></div>
+              <div class="col-md-7"><p><strong>8am - 8pm</strong></p></div>
+            </div>
+            <div class="row">
+              <div class="col-md-5"><p>Farm market</p></div>
+              <div class="col-md-7"><p><strong>9am - 6pm</strong></p></div>
+            </div>
           </div>
           <div class="col-md-6">
             <h5>Contact us</h5>
-            <p>Phone</p>
-            <p>Address</p>
+            <div class="row">
+              <div class="col-md-3"><p>Phone</p></div>
+              <div class="col-md-9"><p><strong>(519) 443-4909</strong></p></div>
+            </div>
+            <div class="row">
+              <div class="col-md-3"><p>Address</p></div>
+              <div class="col-md-9"><p><strong>2587 Cockshutt Rd. Waterford, ON, N0E 1Y0</strong></p></div>
+            </div>
           </div>
         </div>
       </div>
@@ -88,7 +100,7 @@
           <p>Originated by the family of Glen and Jean Austin, the farm has been providing Norfolk with pre-picked and pick-your-own produce for years.</p>
           <p>The farm was sold to Mark and Maureen Sloot, nee Austin, who have been operating it with their three children since 1995. The family specialized in strawberries but expanded into different crops to meet the substantial requests of their customers. The farm is conveniently located south of Boston, Ontario on Cockshutt Road, and is simply minutes from Hamilton, highway 403 and Port Dover.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 no=padding">
           <img src="static/img/photo1.png" class="section-main-img"/>
         </div>
       </div>
@@ -106,7 +118,7 @@
     <!-- market -->
     <section class="market">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 no-padding">
           <img src="static/img/photo2.png" class="section-main-img"/>
         </div>
         <div class="col-md-6 section-copy right">
@@ -136,7 +148,7 @@
           <p>Backed by the advanced research capabilities of Pioneer, we live and work just down the road from you. Combine this with Pioneer's broad product lineup and services and we will deliver solutions to match your needs and maximize yields.</p>
           <a href="" class="button">Learn More</a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 no-padding">
           <img src="static/img/photo3.png" class="section-main-img"/>
         </div>
       </div>
@@ -147,6 +159,12 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
+              <div class="col-md-3"><p>Phone</p></div>
+              <div class="col-md-9"><p><strong>(519) 443-4909</strong></p></div>
+              <div class="col-md-3"><p>Address</p></div>
+              <div class="col-md-9"><p><strong>2587 Cockshutt Rd. Waterford, ON, N0E 1Y0</strong></p></div>
+              <div class="col-md-3"><p>Email</p></div>
+              <div class="col-md-9"><p><strong>mark.sloot@plantpioneer.com</strong></p></div>
             </div>
             <div class="col-md-6">
             </div>
@@ -156,4 +174,6 @@
       </footer>
     <!-- End footer -->
   </body>
+
+  <script type="text/javascript" src="static/js/main.js"></script>
 </html>
