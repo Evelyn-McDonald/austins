@@ -17,14 +17,25 @@ body {
 }
 
 h1 {
-
+    color: $white;
+    &:first-of-type {
+        font-size: 67px;
+        font-family: $font-bold;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &:last-of-type {
+        font-size: 53px;
+        font-family: $font-regular;
+        margin: 0 0 40px;
+    }
 }
 h2 {
     color: $white;
     font-family: $font-bold;
     font-size: 90px;
     letter-spacing: -4px;
-    margin: 40px 0 0;
+    margin: 0;
     text-transform: uppercase;
     text-shadow: 0 8px 15px rgba(188,197,209,0.5);
 }
@@ -70,6 +81,11 @@ button, a.button {
 
 strong {
     font-family: $font-bold;
+}
+
+header {
+    background: $white;
+    height: 60px;
 }
 
 section {
