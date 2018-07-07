@@ -44,7 +44,7 @@ h2 {
 }
 h3 {
     font-family: 'Pacifico', cursive;
-    font-size: 38px;
+    font-size: 34px;
     margin-top: -44px;
 }
 h4 {
@@ -128,6 +128,11 @@ footer {
     .legal {
         font-size: 14px;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 40px;
+    }
+
+    .hours {
+        border: 1px solid rgba(255,255,255,0.5);
+        padding: 20px 40px;
     }
 }
