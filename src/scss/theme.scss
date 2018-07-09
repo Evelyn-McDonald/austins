@@ -18,6 +18,9 @@ body {
 
 h1 {
     color: $white;
+    opacity: 0;
+    @include fadeIn(2s ease-in-out 0.5s forwards);
+
     &:first-of-type, &:first-of-type * {
         color: $white;
         font-size: 70px;

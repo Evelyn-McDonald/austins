@@ -19,3 +19,29 @@
     -o-transform: $args;
     transform: $args;
 }
+
+@mixin animation($args...) {
+    -webkit-animation: $args;
+    -moz-animation: $args;
+    -o-animation: $args;
+    animation: $args;
+}
+
+
+
+/* FADE IN */
+@mixin fadeIn($args) {
+    @include animation(fadeIn $args);
+}
+@-moz-keyframes fadeIn {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+@keyframes fadeIn {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
