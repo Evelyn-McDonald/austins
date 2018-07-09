@@ -1,8 +1,12 @@
 .Home {
     .hero {
-        background: url(../img/hero-bg.png) no-repeat;
+        background: url(../img/hero-bg.png) no-repeat 20% center;
         background-size: cover;
         padding: 220px 0 350px;
+
+        @media screen and (max-width: 414px) {
+            padding: 160px 0;
+        }
     }
 
     .latest-news {
@@ -29,6 +33,16 @@
 
     .section-main-img {
         width: 100%
+    }
+
+    .contact-bar {
+        padding: 0 0 40px;
+        h5 {
+            margin-top: 40px;
+        }
+        p {
+            margin: 0;
+        }
     }
 
     .quote {

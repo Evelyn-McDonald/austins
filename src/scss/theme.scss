@@ -31,6 +31,9 @@ h1 {
         font-family: $font-regular;
         line-height: 50px;
         margin: 0 0 40px;
+        @media screen and (max-width: 414px) {
+            font-size: 46px;
+        }
     }
 }
 h2 {
@@ -54,6 +57,11 @@ h4 {
     em {
         font-family: 'Pacifico', cursive;
     }
+}
+h5 {
+    font-family: $font-bold;
+    font-size: 20px;
+    margin: 0 0 24px;
 }
 
 p {
@@ -93,6 +101,41 @@ strong {
 header {
     background: $white;
     height: 60px;
+    .logo {
+        background: url(../img/logo.png) no-repeat;
+        background-size: 100%;
+        width: 110px;
+        height: 36px;
+        display: inline-block;
+        margin-top: 14px;
+    }
+    .sub-heading {
+        display: inline-block;
+        font-size: 18px;
+        font-family: $font-semibold;
+        margin-left: 8px;
+        vertical-align: top;
+        padding-top: 22px;
+    }
+    nav {
+        float: right;
+        .fb-link {
+            display: inline-block;
+            font-size: 16px;
+            font-family: $font-semibold;
+            margin-top: 23px;
+            &::before {
+                background: url(../img/fb-icon.png) no-repeat;
+                background-size: 100%;
+                content: '';
+                display: inline-block;
+                width: 15px;
+                height: 18px;
+                margin-right: 5px;
+                vertical-align: bottom;
+            }
+        }
+    }
 }
 
 section {
@@ -124,15 +167,31 @@ footer {
     p {
         font-size: 16px;
         margin: 0;
+        line-height: 20px;
+        margin-bottom: 6px;
     }
+
+    .logo {
+        background: url(../img/logo-white.png) no-repeat;
+        background-size: 100%;
+        width: 110px;
+        height: 36px;
+        display: inline-block;
+        margin: 10px 0 20px 15px;
+    }
+
     .legal {
         font-size: 14px;
         text-align: center;
-        margin-top: 40px;
+    }
+
+    .contact {
+        margin-bottom: 40px;
     }
 
     .hours {
         border: 1px solid rgba(255,255,255,0.5);
         padding: 20px 40px;
+        margin-bottom: 40px;
     }
 }
