@@ -13,7 +13,7 @@
         background: rgba(0,0,0,0.4);
         border-radius: 20px;
         padding: 6px 20px;
-        width: 352px;
+        max-width: 352px;
         opacity: 0;
         @include fadeIn(2s ease-in-out 1s forwards);
 
