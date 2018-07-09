@@ -139,6 +139,7 @@ header {
 }
 
 section {
+    position: relative;
     &.dark {
         background: $bg-dark;
         * {
@@ -146,11 +147,27 @@ section {
         }
     }
     .section-copy {
+        position: absolute;
+        margin-top: 45%;
+        @include transform(translateY(-50%));
         &.right {
             padding: 40px 80px 80px 40px
         }
         &.left {
             padding: 40px 40px 80px 80px
+        }
+        @media screen and (max-width: 1200px) {
+            &.right, &.left {
+                padding: 40px;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            position: static;
+            margin: 0;
+            @include transform(translateY(0));
+            &.right, &.left {
+                padding: 40px 20px;
+            }
         }
     }
 }
