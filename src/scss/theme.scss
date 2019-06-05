@@ -23,16 +23,16 @@ h1 {
 
     &:first-of-type, &:first-of-type * {
         color: $white;
-        font-size: 70px;
+        font-size: 94px;
         font-family: $font-bold;
-        line-height: 60px;
+        line-height: 80px;
         text-transform: uppercase;
         margin: 0;
     }
     &:last-of-type {
-        font-size: 53px;
+        font-size: 65px;
         font-family: $font-regular;
-        line-height: 50px;
+        line-height: 60px;
         margin: 0 0 40px;
         @media screen and (max-width: 414px) {
             font-size: 46px;
@@ -46,7 +46,7 @@ h2 {
     letter-spacing: -4px;
     margin: 0;
     text-transform: uppercase;
-    text-shadow: 0 8px 15px rgba(188,197,209,0.5);
+    text-shadow: 0 8px 15px rgba(188,197,209,0.6);
     @media screen and (max-width: 414px) {
         font-size: 70px;
     }
