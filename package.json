@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/Evelyn-McDonald/nazca-marketing-site#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.0.1",
     "run-sequence": "^2.2.1"
   }
